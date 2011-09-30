@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://txtvia/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://txtvia/locale/overlay.dtd">
+<overlay id="txtvia-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="txtvia-strings" src="chrome://txtvia/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="txtvia-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+    label="&txtviaToolbarButton.label;" tooltiptext="&txtviaToolbarButton.tooltip;"
+    oncommand="txtvia.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+
+
+  <menupopup id="viewSidebarMenu">
+    <menuitem observes="viewSidebar_txtvia" />
+  </menupopup>
+
+  <broadcasterset id="mainBroadcasterSet">
+    <broadcaster id="viewSidebar_txtvia"
+                 label="&txtviaSidebar.label;"
+                 autoCheck="false"
+                 type="checkbox"
+                 group="sidebar"
+                 sidebarurl="chrome://txtvia/content/ff-sidebar.xul"
+                 sidebartitle="&txtviaSidebar.label;"
+                 oncommand="toggleSidebar('viewSidebar_txtvia');" />
+  </broadcasterset>
+
+</overlay>

@@ -1,0 +1,8 @@
+<!ENTITY txtvia.label "Your localized menuitem">
+<!ENTITY txtviaContext.label "Your Menuitem">
+<!ENTITY txtviaContext.accesskey "Y">
+<!ENTITY txtviaToolbarButton.label "Your Toolbar Button">
+<!ENTITY txtviaToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY txtviaSidebar.label "Your Sidebar">
+<!ENTITY txtviaToolbar.name  "example">
+<!ENTITY txtviaToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &txtviaToolbar.name;">

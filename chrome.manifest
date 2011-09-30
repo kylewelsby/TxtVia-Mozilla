@@ -1,0 +1,7 @@
+content   txtvia                 chrome/content/
+skin      txtvia   classic/1.0   chrome/skin/
+locale    txtvia   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://txtvia/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://txtvia/skin/overlay.css
